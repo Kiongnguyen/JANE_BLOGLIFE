@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=Roboto:wght@300;500;700;900&display=swap');
+
+//color
+$color-premeri: #000;
+$color-text: #fff;
+$color-text-h: #ccc;
+$color-button: #f44336;
+$color-hover: #ccc;
+$color-bg-text: #f1f1f1;
+//height
+$header-height: 220px;
+$navbar-height: 40px;
+$header-with-search-height: calc(var($header-height) - var($navbar-height));
+//screen
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald';
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    text-decoration: none;
+    color: var(--text-color);
+}
