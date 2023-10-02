@@ -1,0 +1,25 @@
+@import '../GlobalStyles/GlobalStyles.scss';
+
+.tag-my-name {
+    margin-top: 16px;
+    background-color: $color-premeri;
+    img {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    div {
+        background-color: $color-premeri;
+        color: $color-text;
+        padding: 1px 16px;
+        margin: 0px;
+        text-align: justify;
+        h4 {
+            margin: 10px 0;
+            font-size: 2rem;
+        }
+        p {
+            margin: 15px 0px;
+        }
+    }
+}

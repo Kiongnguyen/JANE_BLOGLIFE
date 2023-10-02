@@ -8,6 +8,7 @@ import Pagination from './components/Pagination';
 import ToTheTop from './components/ToTheTop';
 import Foodter from './components/Footer';
 import './components/GlobalStyles/reposive.scss';
+import MyName from './components/MyName';
 
 function App() {
     return (
@@ -39,7 +40,7 @@ function App() {
                         <Card />
                     </div>
                     <div className="col l-4 m-12 c-12 card-sub">
-                        <div className="card-name">My Name</div>
+                        <MyName />
                         <div className="list-port">Popular Posts </div>
                         <div className="card-ad">Advertise</div>
                         <div className="card-tags"> Tags </div>
