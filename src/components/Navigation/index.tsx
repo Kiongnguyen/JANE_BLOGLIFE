@@ -66,6 +66,7 @@ const Navigation = () => {
                 <div className={`form-search ${!show ? 'hidden' : 'active'}`}>
                     <input placeholder=" Search  to the blog"></input>
                     <button
+                        className="search-btn"
                         onClick={() => {
                             setShow(!show);
                         }}

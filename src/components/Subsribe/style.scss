@@ -1,0 +1,99 @@
+@import '../GlobalStyles/GlobalStyles.scss';
+
+.subscribe {
+    .overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 3;
+    }
+
+    .model-sub {
+        position: fixed;
+        top: 40%;
+        left: 160px;
+        right: 160px;
+        @media (max-width: 739px) {
+            left: 40px;
+            right: 40px;
+        }
+        @media (min-width: 740px) and (max-width: 1023px) {
+            left: 80px;
+            right: 80px;
+        }
+        background-color: $color-text;
+        padding: 32px;
+        max-width: 900px;
+        width: auto;
+        height: auto;
+        z-index: 4;
+
+        h1 {
+            font-size: 3rem;
+            margin: 10px 0px;
+        }
+        p {
+            margin: 15px 0px;
+        }
+        input {
+            display: block;
+            width: 100%;
+            height: 46px;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid $color-premeri;
+        }
+        button {
+            color: $color-text;
+            background-color: $color-button;
+            width: 100%;
+            line-height: 46px;
+            height: 46px;
+            margin-bottom: 16px;
+            text-align: center;
+            &:hover {
+                background-color: $color-hover;
+                color: $color-premeri;
+            }
+        }
+        .close {
+            background-color: $color-text;
+            color: $color-premeri;
+            font-size: 32px;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 32px;
+            right: 32px;
+        }
+    }
+}
+
+.active-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.hidden {
+    display: none;
+}
+
+.btn-sub {
+    background-color: $color-text;
+    color: $color-premeri;
+    font-size: 1.8rem;
+    width: 124px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Oswald';
+    opacity: 0.5;
+    position: absolute;
+    top: $header-height + $navbar-height;
+    right: 24px;
+    z-index: 2;
+}

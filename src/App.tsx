@@ -3,12 +3,14 @@ import './App.scss';
 import './assets/style/grid.scss';
 import image from './assets/img/slideShow.jpg';
 import Navigation from './components/Navigation';
+import Subsribe from './components/Subsribe';
 import './components/GlobalStyles/reposive.scss';
 
 function App() {
     return (
         <div className="grid App">
             <Navigation />
+            <Subsribe />
             <div className="header">
                 <div className="header-title">
                     <h1>JANE BLOGLIFE</h1>
@@ -24,7 +26,6 @@ function App() {
                         <h1>
                             <b className="hide-on-mobile">FASHION BLOG</b>
                         </h1>
-                        <div className="sub-model">SUBSCRIBE</div>
                     </div>
                 </div>
             </div>

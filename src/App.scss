@@ -3,12 +3,7 @@
 .App {
     text-align: center;
     font-size: 1.5rem;
-}
-
-.navigation {
-    background-color: $color-premeri;
-    height: $navbar-height;
-    color: $color-text;
+    position: relative;
 }
 
 .header-title {
@@ -63,17 +58,6 @@
             font-size: 6.4rem;
             color: $color-text;
             letter-spacing: 4px;
-        }
-        .sub-model {
-            background-color: $color-text;
-            color: $color-premeri;
-            font-size: 1.8rem;
-            width: 124px;
-            height: 50px;
-            text-align: center;
-            line-height: 50px;
-            font-family: 'Oswald';
-            opacity: 0.5;
         }
     }
 }
