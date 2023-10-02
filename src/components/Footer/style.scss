@@ -1,0 +1,12 @@
+@import '../GlobalStyles/GlobalStyles.scss';
+
+.footer {
+    height: 115px;
+    width: 100%;
+    background-color: $color-bg-ft;
+    color: $color-text;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 16px;
+}

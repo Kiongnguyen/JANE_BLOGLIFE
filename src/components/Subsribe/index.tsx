@@ -3,7 +3,6 @@ import './style.scss';
 
 const Subsribe = () => {
     const [close, setClose] = useState(true);
-    console.log('sub', close);
 
     return (
         <div className="subscribe">

@@ -1,0 +1,110 @@
+@import '../GlobalStyles/GlobalStyles.scss';
+
+.card {
+    background-color: $color-text;
+    padding: 12px 24px;
+    margin-top: 16px;
+    h3 {
+        font-size: 2.4rem;
+        line-height: 1.5;
+        margin: 10px 0px;
+        font-weight: 400;
+    }
+    h6 {
+        font-size: 1.8rem;
+        margin: 10px 0px;
+        font-weight: 400;
+        span {
+            opacity: 0.6;
+        }
+    }
+    img {
+        width: 100%;
+        padding: 16px 0px;
+    }
+    p {
+        margin: 16px 0px;
+        text-align: justify;
+    }
+    .card-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 0px;
+        font-family: 'Open Sans';
+        .btn-like {
+            height: 40px;
+            width: 80px;
+            border: 1px solid $color-hover;
+            background-color: $color-text;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            &:hover {
+                background-color: $color-hover;
+            }
+        }
+        .btn-replies {
+            width: 120px;
+            height: 40px;
+            background-color: $color-premeri;
+            color: $color-text;
+            font-weight: 700;
+            font-family: 'Open Sans';
+            p {
+                line-height: 40px;
+                text-align: center;
+                margin: 0px;
+                span {
+                    background-color: $color-text;
+                    color: $color-premeri;
+                    display: inline-block;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    text-align: center;
+                    line-height: 25px;
+                    margin-left: 10px;
+                }
+            }
+
+            &:hover {
+                background-color: $color-hover;
+            }
+        }
+    }
+    .list-comments {
+        border-top: 1px solid $color-hover;
+        ul {
+            list-style-type: none;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                gap: 16px;
+                div {
+                    max-height: 90px;
+                }
+                img {
+                    height: 90px;
+                    width: auto;
+                    padding: 0px;
+                }
+                .com-info {
+                    margin: 16px 5px;
+                    height: 90px;
+                    font-weight: 400;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    h4 {
+                        font-size: 2rem;
+                        span {
+                            font-size: 1.5rem;
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

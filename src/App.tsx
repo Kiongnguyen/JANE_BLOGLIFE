@@ -1,14 +1,17 @@
 import React from 'react';
 import './App.scss';
-import './assets/style/grid.scss';
 import image from './assets/img/slideShow.jpg';
 import Navigation from './components/Navigation';
 import Subsribe from './components/Subsribe';
+import Card from './components/Card';
+import Pagination from './components/Pagination';
+import ToTheTop from './components/ToTheTop';
+import Foodter from './components/Footer';
 import './components/GlobalStyles/reposive.scss';
 
 function App() {
     return (
-        <div className="grid App">
+        <div className="App" id="header">
             <Navigation />
             <Subsribe />
             <div className="header">
@@ -29,26 +32,27 @@ function App() {
                     </div>
                 </div>
             </div>
-            <div className="container">
-                <div className="cards">
-                    <div className="card1">card1</div>
-                    <div className="card2">card2</div>
-                    <div className="card3">card3</div>
-                </div>
-                <div className="card-sub">
-                    <div className="card-name">My Name</div>
-                    <div className="list-port">Popular Posts </div>
-                    <div className="card-ad">Advertise</div>
-                    <div className="card-tags"> Tags </div>
-                    <div className="card-ins">Inspiration</div>
-                    <div className="card-follow"> Follow Me</div>
-                    <div className="card-subsc">Subscribe</div>
+
+            <div className="grid wide">
+                <div className="row sm-gutter container">
+                    <div className="col l-8 m-12 c-12 cards">
+                        <Card />
+                    </div>
+                    <div className="col l-4 m-12 c-12 card-sub">
+                        <div className="card-name">My Name</div>
+                        <div className="list-port">Popular Posts </div>
+                        <div className="card-ad">Advertise</div>
+                        <div className="card-tags"> Tags </div>
+                        <div className="card-ins">Inspiration</div>
+                        <div className="card-follow"> Follow Me</div>
+                        <div className="card-subsc">Subscribe</div>
+                    </div>
                 </div>
             </div>
-            <div className="pagination">Pagination</div>
-            <div className="tag-to-the-top"> To the top</div>
 
-            <div className="Footer">Powered by w3.css</div>
+            <Pagination />
+            <ToTheTop />
+            <Foodter />
         </div>
     );
 }
