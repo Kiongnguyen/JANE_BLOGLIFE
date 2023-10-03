@@ -3,6 +3,7 @@
 .tag-my-name {
     margin-top: 16px;
     background-color: $color-premeri;
+
     img {
         width: 100%;
         height: auto;
@@ -14,9 +15,11 @@
         padding: 1px 16px;
         margin: 0px;
         text-align: justify;
+
         h4 {
             margin: 10px 0;
             font-size: 2rem;
+            font-weight: 400;
         }
         p {
             margin: 15px 0px;
