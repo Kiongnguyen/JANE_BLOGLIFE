@@ -49,3 +49,21 @@ a[href] {
     text-decoration: none;
     color: var(--text-color);
 }
+
+.hidden {
+    display: none;
+}
+.active {
+    display: block;
+    animation: advSideIn ease-in 2s;
+}
+
+@keyframes advSideIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
