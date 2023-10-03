@@ -11,6 +11,10 @@ import './components/GlobalStyles/reposive.scss';
 import MyName from './components/MyName';
 import ListPosts from './components/ListPosts';
 import Advertise from './components/Advertise';
+import Tags from './components/Tags';
+import Inspiration from './components/Inspirantion';
+import Follow from './components/Follow';
+import SubrTag from './components/SubrTag';
 
 function App() {
     return (
@@ -45,10 +49,10 @@ function App() {
                         <MyName />
                         <ListPosts />
                         <Advertise />
-                        <div className="card-tags"> Tags </div>
-                        <div className="card-ins">Inspiration</div>
-                        <div className="card-follow"> Follow Me</div>
-                        <div className="card-subsc">Subscribe</div>
+                        <Tags />
+                        <Inspiration />
+                        <Follow />
+                        <SubrTag />
                     </div>
                 </div>
             </div>
